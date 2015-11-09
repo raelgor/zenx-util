@@ -1,0 +1,24 @@
+{
+  "name": "zenx-util",
+  "version": "0.0.1",
+  "description": "A bundle of tools used by the ZenX modules.",
+  "homepage": "https://zenxplatform.com/",
+  "icon": "http://tournouatichu.com/logolight.png",
+  "license": "MIT",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raelgor/zenx-util.git"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "jade": "1.9.2",
+    "mongodb": ">=2.0.28",
+    "password-hash": "1.2.2"
+  },
+  "author": {
+    "name": "Kosmas Papadatos",
+    "email": "kosmas.papadatos@gmail.com",
+    "url": "https://plus.google.com/+KosmasPapadatos"
+  }
+}
