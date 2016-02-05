@@ -2,7 +2,7 @@
 module.exports = (generator, returnOnlyLast) => {
 
     return new Promise((resolve) => {
-
+        
         var gen = generator();
         var buffer = [];
         var last;
@@ -14,9 +14,12 @@ module.exports = (generator, returnOnlyLast) => {
             !returnOnlyLast && buffer.push(value);
 
             if (last.done) return resolve(returnOnlyLast ? last.value : buffer);
-
-            last.value.then(iterate, iterate);
-
+            
+            if(last.value.then)
+                last.value.then(iterate, iterate);
+            else
+                iterate();
+                  
         })();
 
     });

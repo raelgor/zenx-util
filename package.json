@@ -1,6 +1,6 @@
 {
   "name": "zenx-util",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A bundle of tools used by the ZenX modules.",
   "homepage": "https://zenxplatform.com/",
   "icon": "http://tournouatichu.com/logolight.png",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "colors": "^1.1.2",
+    "fb": "^0.7.3",
     "jade": "1.9.2",
     "mongodb": ">=2.0.28",
     "password-hash": "1.2.2"

@@ -3,6 +3,8 @@ var instance = {};
 
 instance.log = (message) => {
 	
+	if(!global._zenx_logging) return;
+	
 	message = colors.cyan('[ZenX] ') + message;
 	
 	console.log(message);
